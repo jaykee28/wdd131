@@ -1,10 +1,8 @@
-// getdates.js
-
-// Get current year
+// Get the current year
 const currentYear = new Date().getFullYear();
-document.getElementById("copyright-year").textContent = currentYear;
 
-// Get last modified date
-const lastModified = document.lastModified;
-document.getElementById("last-modified").textContent = lastModified;
+// Insert current year into the footer
+document.getElementById('copyright-year').textContent = currentYear;
 
+// Insert last modified date into the footer
+document.getElementById('last-modified').textContent = document.lastModified;
