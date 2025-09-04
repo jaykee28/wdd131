@@ -1,0 +1,62 @@
+/* Base styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "main aside"
+    "footer footer";
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Grid area assignments */
+header {
+  grid-area: header;
+  background-color: #004d40;
+  color: white;
+  padding: 1rem;
+}
+
+main {
+  grid-area: main;
+  padding: 1rem;
+}
+
+aside {
+  grid-area: aside;
+  background-color: #e0f2f1;
+  padding: 1rem;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #004d40;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Flexbox navigation */
+nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
