@@ -1,0 +1,178 @@
+
+:root {
+
+  --color-green: #007847;
+  --color-gold: #FFB81C;
+  --color-red: #DE3831;
+  --color-blue: #002395;
+  --color-black: #000000;
+  --color-white: #FFFFFF;
+
+  --font-primary: 'Roboto', sans-serif;
+  --font-heading: 'Montserrat', sans-serif;
+  --spacing: 1rem;
+  --max-width: 1200px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-primary);
+  color: var(--color-black);
+  background-color: var(--color-white);
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+  text-align: center;
+  padding: var(--spacing);
+}
+
+header h1 {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+}
+
+header nav ul {
+  list-style: none;
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+header nav a {
+  color: var(--color-white);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+header nav a:hover {
+  color: var(--color-gold);
+}
+
+.hero {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: var(--spacing) auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero h2 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: var(--color-white);
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+}
+
+.info {
+  padding: var(--spacing);
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.data, .weather {
+  background-color: #f0f0f0;
+  padding: var(--spacing);
+  border-radius: 10px;
+  margin-bottom: var(--spacing);
+}
+
+@media (min-width: 500px) {
+  .info {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--spacing);
+  }
+
+  .data, .weather {
+    flex: 1;
+    margin-bottom: 0;
+  }
+}
+
+.weather h2::after {
+  content: "";
+}
+
+@media (min-width: 1000px) {
+  .weather h2::after {
+    content: " ⛅";
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+  }
+}
+
+h2, h3 {
+  font-family: var(--font-heading);
+  margin-bottom: 0.5rem;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: var(--spacing);
+}
+
+li {
+  margin-bottom: 0.3rem;
+}
+
+footer {
+  background-color: var(--color-green);
+  color: var(--color-white);
+  text-align: center;
+  padding: var(--spacing);
+  font-size: 0.9rem;
+  margin-top: var(--spacing);
+}
+
+@media (max-width: 700px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+
+  .info {
+    flex-direction: column;
+  }
+}
+
+a {
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--color-red);
+}
+
+.data, .weather {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.data:hover, .weather:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+}
