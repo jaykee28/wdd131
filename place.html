@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/place.css">
   <link rel="stylesheet" href="styles/place-large.css">
+
   <script src="scripts/weather.js" defer></script>
 </head>
 <body>
@@ -21,43 +22,44 @@
       <picture>
         <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
         <source srcset="images/hero-medium.webp" media="(min-width: 500px)">
-        <img 
-          src="images/hero-small.webp" 
-          alt="Panoramic view of Table Mountain with the city, stadium, and coastline in the foreground under partly cloudy skies"
-          width="1500" 
-          height="750">
-      </picture>
+        <img src="images/hero-small.webp" 
+             alt="Panoramic view of Table Mountain with the city, stadium, and coastline in the foreground under partly cloudy skies"
+             width="1500" 
+             height="750">
+       </picture>
+      <h2>Discover South Africa</h2>
     </div>
-
+    
     <section class="info">
-  <article class="data">
-    <h2>Data</h2>
-    <ul>
-      <li><strong>Area:</strong> 1,221,037 sq km</li>
-      <li><strong>Population:</strong> 60 million</li>
-      <li><strong>Capital Cities:</strong> Pretoria (administrative), Bloemfontein (judicial), Cape Town (legislative)</li>
-      <li><strong>Languages:</strong> Afrikaans, Zulu, Xhosa</li>
-      <li><strong>Currency:</strong> South African Rand</li>
-      <li><strong>Time Zone:</strong> UTC +2</li>
-      <li><strong>Calling Code:</strong> +27</li>
-      <li><strong>Internet TLD:</strong> .za</li>
-    </ul>
-  </article>
+      <h2>Information</h2>
+      <article class="data">
+        <h3>Data</h3>
+        <ul>
+          <li><strong>Area:</strong> 1,221,037 sq km</li>
+          <li><strong>Population:</strong> 60 million</li>
+          <li><strong>Capital Cities:</strong> Pretoria (administrative), Bloemfontein (judicial), Cape Town (legislative)</li>
+          <li><strong>Languages:</strong> Afrikaans, Zulu, Xhosa</li>
+          <li><strong>Currency:</strong> South African Rand</li>
+          <li><strong>Time Zone:</strong> UTC +2</li>
+          <li><strong>Calling Code:</strong> +27</li>
+          <li><strong>Internet TLD:</strong> .za</li>
+        </ul>
+      </article>
 
-  <aside class="weather">
-    <h3>Weather ⛅</h3>
-    <img src="images/weather-icon.svg" alt="Weather icon" class="weather-icon">
-    <ul>
-      <li><strong>Temperature:</strong> 18°C</li>
-      <li><strong>Conditions:</strong> Partly Cloudy</li>
-      <li><strong>Wind Speed:</strong> 10 km/h</li>
-      <li><strong>Wind Chill:</strong> <span id="windchill">Calculating...</span></li>
-    </ul>
-  </aside>
-</section>
+      <aside class="weather">
+        <h4>Weather</h4>
+        <img src="images/weather-icon.svg" alt="Weather icon" class="weather-icon">
+        <ul>
+          <li><strong>Temperature:</strong> 18°C</li>
+          <li><strong>Conditions:</strong> Partly Cloudy</li>
+          <li><strong>Wind Speed:</strong> 10 km/h</li>
+          <li><strong>Wind Chill:</strong> <span id="windchill">Calculating...</span></li>
+        </ul>
+      </aside>
+    </section>
+  </main>
 
-
- <footer>
+  <footer>
     <p>&copy; <span id="copyright-year"></span> Jacqueline Mufetu 🌈 South Africa 🌈</p>
     <p>Last updated: <span id="last-modified"></span></p>
   </footer>
