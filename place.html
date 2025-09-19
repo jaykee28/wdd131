@@ -8,8 +8,7 @@
   <title>South Africa</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/place.css">
-  <link rel="stylesheet" href="styles/place-large.css">
-
+  <link rel="stylesheet" href="styles/place-large.css" media="screen and (min-width: 1000px)">
   <script src="scripts/weather.js" defer></script>
 </head>
 <body>
@@ -26,12 +25,11 @@
              alt="Panoramic view of Table Mountain with the city, stadium, and coastline in the foreground under partly cloudy skies"
              width="1500" 
              height="750">
-       </picture>
+      </picture>
       <h2>Discover South Africa</h2>
     </div>
     
     <section class="info">
-      <h2>Information</h2>
       <article class="data">
         <h3>Data</h3>
         <ul>
@@ -47,7 +45,7 @@
       </article>
 
       <aside class="weather">
-        <h4>Weather</h4>
+        <h3>Weather</h3>
         <img src="images/weather-icon.svg" alt="Weather icon" class="weather-icon">
         <ul>
           <li><strong>Temperature:</strong> 18°C</li>
@@ -63,5 +61,10 @@
     <p>&copy; <span id="copyright-year"></span> Jacqueline Mufetu 🌈 South Africa 🌈</p>
     <p>Last updated: <span id="last-modified"></span></p>
   </footer>
+
+  <script>
+    document.getElementById("copyright-year").textContent = new Date().getFullYear();
+    document.getElementById("last-modified").textContent = document.lastModified;
+  </script>
 </body>
 </html>

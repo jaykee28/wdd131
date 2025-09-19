@@ -1,10 +1,8 @@
-
 @media (min-width: 1000px) {
-
   :root {
     --max-width: 1200px;
   }
-
+  
   .hero {
     max-width: var(--max-width);
     margin: 2rem auto;
@@ -12,27 +10,27 @@
   }
 
   .hero h2 {
-    position: absolute;
     top: 30px;
     left: 30px;
     font-size: 2.5rem;
-    color: var(--color-white);
     text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
   }
 
   .info {
-    flex-direction: row;
-    justify-content: space-between;
-    gap: var(--spacing);
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; 
+    gap: 2rem;
     max-width: var(--max-width);
-    margin: 0 auto;
+    margin: 2rem auto;
     padding: 2rem var(--spacing);
+    align-items: start;
   }
 
   .data, .weather {
-    flex: 1;
     padding: 2rem;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    background-color: #f9f9f9;
+    border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 
@@ -41,10 +39,17 @@
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
   }
 
-  .weather h2::after {
+  .weather h3::after {
     content: " ⛅";
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin-left: 0.5rem;
+  }
+
+  .info .hero {
+    grid-column: 2;
+    grid-row: 1;
+    margin: 0;
+    border-radius: 10px;
   }
 
   footer {
