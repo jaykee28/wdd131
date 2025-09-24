@@ -87,7 +87,6 @@ const temples = [
 
 const gallery = document.querySelector(".gallery");
 
-// Display temples with lazy loading and responsive images
 function displayTemples(filteredList) {
   gallery.innerHTML = ""; 
 
@@ -97,11 +96,10 @@ function displayTemples(filteredList) {
 
     const img = document.createElement("img");
     img.alt = temple.templeName;
-    img.loading = "lazy";          // Lazy load
+    img.loading = "lazy";       
     img.width = 400;
     img.height = 250;
 
-    // Responsive srcset
     img.src = temple.imageUrl;
     img.srcset = `
       ${temple.imageUrl} 400w,
@@ -124,7 +122,6 @@ function displayTemples(filteredList) {
   });
 }
 
-// Filter logic
 function applyFilter(filter) {
   let filtered = [];
 
@@ -148,21 +145,19 @@ function applyFilter(filter) {
   displayTemples(filtered);
 }
 
-// Event listeners for navigation buttons
 document.getElementById("home").addEventListener("click", () => applyFilter("home"));
 document.getElementById("old").addEventListener("click", () => applyFilter("old"));
 document.getElementById("new").addEventListener("click", () => applyFilter("new"));
 document.getElementById("large").addEventListener("click", () => applyFilter("large"));
 document.getElementById("small").addEventListener("click", () => applyFilter("small"));
 
-// Display all temples on page load
 displayTemples(temples);
 
-// Dynamic footer content
+
 document.getElementById("copyright-year").textContent = new Date().getFullYear();
 document.getElementById("last-modified").textContent = document.lastModified;
 
-// Mobile nav toggle
+
 const nav = document.querySelector('nav');
 const navToggleButton = document.createElement('button');
 navToggleButton.textContent = '☰'; 
