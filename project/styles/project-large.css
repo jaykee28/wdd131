@@ -6,15 +6,29 @@ body {
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 0;
+  text-align: center;
+  padding: 30px 0;
+}
+
+header img {
+  max-width: 120px;
+  height: auto;
+  display: block;
+  margin: 0 auto 15px;
+}
+
+header h1 {
+  margin: 10px 0;
 }
 
 header p {
-  max-width: 50%;
+  max-width: 700px;
+  margin: 15px auto 0;
+  font-size: 1.1rem;
+  color: #374151;
+  line-height: 1.6;
 }
+
 
 section {
   margin: 30px 0;
@@ -24,25 +38,13 @@ section {
   display: flex;
   justify-content: space-between;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .wireframe div {
-  width: 48%;
+  flex: 1;
+  min-width: 45%;
   border: 1px dashed #1E3A8A;
   padding: 15px;
   background-color: #fff;
-}
-
-button {
-  font-size: 1rem;
-  padding: 10px 15px;
-}
-
-input[type="number"] {
-  padding: 7px;
-  font-size: 1rem;
-}
-
-ul li {
-  margin-bottom: 5px;
 }

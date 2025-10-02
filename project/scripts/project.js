@@ -1,4 +1,4 @@
-// Array of services
+
 const services = [
   { name: "HTML & CSS Lessons", price: 150 },
   { name: "C# Lessons", price: 200 },

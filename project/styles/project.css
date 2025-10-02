@@ -5,6 +5,7 @@ body {
   margin: 0;
   padding: 0 10px;
   line-height: 1.5;
+  max-width: 100%;
 }
 
 header {
@@ -12,9 +13,17 @@ header {
   padding: 20px 0;
 }
 
+header img {
+  max-width: 100px;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+}
+
 h1, h2, h3 {
   font-family: 'Roboto', sans-serif;
   color: #1E3A8A; 
+  margin: 10px 0;
 }
 
 .accent {
@@ -29,6 +38,10 @@ ul {
   padding-left: 20px;
 }
 
+ul li {
+  margin-bottom: 5px;
+}
+
 .wireframe div {
   border: 1px dashed #1E3A8A;
   padding: 10px;
@@ -36,6 +49,7 @@ ul {
   background-color: #fff;
 }
 
+/* Buttons */
 button {
   background-color: #F97316;
   color: #fff;
@@ -44,13 +58,20 @@ button {
   cursor: pointer;
   margin-top: 5px;
   font-family: Arial, sans-serif;
+  font-size: 0.95rem;
+  border-radius: 4px;
+  transition: background 0.3s ease;
 }
 
 button:hover {
   background-color: #1E3A8A;
 }
 
+/* Inputs */
 input[type="number"] {
-  padding: 5px;
+  padding: 7px;
   margin-right: 5px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
