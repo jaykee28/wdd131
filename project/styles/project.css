@@ -4,6 +4,7 @@ body {
   background-color: #F3F4F6;
   margin: 0;
   padding: 0 10px;
+  line-height: 1.5;
 }
 
 header {
@@ -13,7 +14,7 @@ header {
 
 h1, h2, h3 {
   font-family: 'Roboto', sans-serif;
-  color: #1E3A8A;
+  color: #1E3A8A; 
 }
 
 .accent {
@@ -33,4 +34,23 @@ ul {
   padding: 10px;
   margin-bottom: 10px;
   background-color: #fff;
+}
+
+button {
+  background-color: #F97316;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  margin-top: 5px;
+  font-family: Arial, sans-serif;
+}
+
+button:hover {
+  background-color: #1E3A8A;
+}
+
+input[type="number"] {
+  padding: 5px;
+  margin-right: 5px;
 }

@@ -62,7 +62,6 @@
   <section>
     <h2>Wireframe</h2>
     <p>Sketches of homepage layout:</p>
-
     <div class="wireframe">
       <div>
         <h3>Mobile View</h3>
@@ -73,6 +72,21 @@
         <p>[Desktop layout placeholder: header with navigation bar, services and gallery side by side, contact form in footer]</p>
       </div>
     </div>
+  </section>
+
+  <section>
+    <h2>JavaScript Dynamic Features</h2>
+    <p>This section demonstrates planned JavaScript features for the final website, including DOM interaction, conditional logic, array methods, and localStorage.</p>
+
+    <h3>Services Display</h3>
+    <button id="show-services">Show Services</button>
+    <ul id="services-list"></ul>
+
+    <h3>Budget Checker</h3>
+    <input type="number" id="budget" placeholder="Enter your budget">
+    <button onclick="checkBudget()">Check</button>
+    <button id="save-budget">Save Budget</button>
+    <p id="budget-result"></p>
   </section>
 
   <section>
@@ -90,5 +104,6 @@
     <p>References: <a href="references.html">View Reference Page</a></p>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
