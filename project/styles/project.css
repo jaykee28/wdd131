@@ -1,0 +1,36 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #F3F4F6;
+  margin: 0;
+  padding: 0 10px;
+}
+
+header {
+  text-align: center;
+  padding: 20px 0;
+}
+
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+  color: #1E3A8A;
+}
+
+.accent {
+  color: #F97316;
+}
+
+section {
+  margin: 20px 0;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.wireframe div {
+  border: 1px dashed #1E3A8A;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
