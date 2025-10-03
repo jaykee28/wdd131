@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Review Form</title>
+  <meta name="author" content="Jacqueline Mufetu">
+  <meta name="description" content="Submit your review for our custom motorcycles. Fill in product details, rate the product, and provide feedback.">
+  <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+  <header>
+    <h1>Product Review Form</h1>
+  </header>
+
+  <main>
+    <form id="reviewForm" action="review.html" method="get">
+      
+      <label for="product">Product Name:</label>
+      <select id="product" name="product" required>
+        <option value="" disabled selected>Select a Product ...</option>
+      </select>
+
+  
+      <fieldset>
+        <legend>Overall Rating:</legend>
+        <div class="stars" id="starRating">
+          <span data-value="1">☆</span>
+          <span data-value="2">☆</span>
+          <span data-value="3">☆</span>
+          <span data-value="4">☆</span>
+          <span data-value="5">☆</span>
+        </div>
+      </fieldset>
+
+      
+      <label for="installDate">Date of Installation:</label>
+      <input type="date" id="installDate" name="installDate" required>
+
+      
+      <fieldset id="featuresFieldset">
+        <legend>Which features did you find useful in the product?</legend>
+        <p>Check all that apply:</p>
+        <label><input type="checkbox" name="features" value="Durability">Durability</label>
+        <label><input type="checkbox" name="features" value="Ease of Use">Ease of Use</label>
+        <label><input type="checkbox" name="features" value="Performance">Performance</label>
+        <label><input type="checkbox" name="features" value="Design">Design</label>
+      </fieldset>
+
+      
+      <label for="review">Written Review:</label>
+      <textarea id="review" name="review" rows="5" placeholder="Write your review here..."></textarea>
+
+      
+      <label for="username">Your Name (optional):</label>
+      <input type="text" id="username" name="username">
+
+     
+      <input type="submit" value="Submit Review">
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="copyright-year"></span> Jacqueline Mufetu 🌈 South Africa 🌈</p>
+    <p>Last updated: <span id="last-modified"></span></p>
+  </footer>
+
+  <script src="scripts/form.js"></script>
+</body>
+</html>
