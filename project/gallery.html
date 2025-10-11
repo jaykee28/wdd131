@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Jacqueline Mufetu">
+  <title>Gallery - Wisdom and Word</title>
+  <link rel="stylesheet" href="styles/project.css">
+  <link rel="stylesheet" href="styles/project-large.css">
+</head>
+<body>
+  <!-- HEADER -->
+   <header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="home.html">
+      <img src="images/logo.webp" alt="Wisdom and Word Logo" class="logo">
+      Wisdom and Word <span class="muted">(PTY) Ltd</span>
+    </a>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="references.html">References</a></li>
+      </ul>
+    </nav>
+
+    <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+  </div>
+</header>
+
+  <!-- MAIN -->
+  <main>
+    <section class="hero" style="min-height:300px; padding:80px 20px;">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <h1 class="hero-title">Gallery</h1>
+        <p class="hero-sub">A glimpse of our classes, projects, and activities.</p>
+      </div>
+    </section>
+
+    <section class="section container gallery">
+      <div class="gallery-grid">
+        <figure class="gallery-item">
+          <img src="images/html-project.webp" alt="HTML & CSS project" loading="lazy">
+          <figcaption>HTML & CSS class project</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <img src="images/class.webp" alt="C# class" loading="lazy">
+          <figcaption>C# programming session</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <img src="images/printing-workshop.webp" alt="Printing workshop" loading="lazy">
+          <figcaption>Printing workshop in progress</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <img src="images/stationery-setup.webp" alt="Stationery setup" loading="lazy">
+          <figcaption>Stationery and office setup</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <img src="images/student-with-laptop.webp" alt="Students with laptops" loading="lazy">
+          <figcaption>Students working on laptops</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <img src="images/training.webp" alt="IT training" loading="lazy">
+          <figcaption>Practical IT training</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <img src="images/website-project.webp" alt="Website project" loading="lazy">
+          <figcaption>Completed website project</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <img src="images/group-study.webp" alt="Group study" loading="lazy">
+          <figcaption>Group study and collaboration</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox">
+    <div class="lightbox-content">
+      <button class="close" aria-label="Close">&times;</button>
+      <button class="prev" aria-label="Previous">&#10094;</button>
+      <img id="lightbox-img" src="" alt="">
+      <button class="next" aria-label="Next">&#10095;</button>
+      <p id="lightbox-caption"></p>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h4>Wisdom and Word (PTY) Ltd</h4>
+        <p class="muted small">40132 Venezuela Street, Eerste River, Cape Town 7100</p>
+        <p class="muted small">Phone: <a href="tel:+27611552911">+27 61 1552 911</a> • <a href="mailto:jmufetu@gmail.com">jmufetu@gmail.com</a></p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col social-col">
+        <h4>Connect</h4>
+        <div class="social-icons">
+          <a class="social" href="https://www.facebook.com" target="_blank" rel="noopener">
+            <img src="images/facebook.svg" alt="Facebook" class="icon">
+          </a>
+          <a class="social" href="https://wa.me/27611552911" target="_blank" rel="noopener">
+            <img src="images/whatsapp.svg" alt="WhatsApp" class="icon">
+          </a>
+          <a class="social" href="https://www.instagram.com" target="_blank" rel="noopener">
+            <img src="images/instagram.svg" alt="Instagram" class="icon">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Wisdom and Word (PTY) Ltd. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="scripts/project.js" defer></script>
+</body>
+</html>

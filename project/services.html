@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Jacqueline Mufetu">
+  <title>Services - Wisdom and Word</title>
+  <link rel="stylesheet" href="styles/project.css">
+  <link rel="stylesheet" href="styles/project-large.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+   <header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="home.html">
+      <img src="images/logo.webp" alt="Wisdom and Word Logo" class="logo">
+      Wisdom and Word <span class="muted">(PTY) Ltd</span>
+    </a>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="references.html">References</a></li>
+      </ul>
+    </nav>
+
+    <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+  </div>
+</header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" style="min-height:300px; padding:80px 20px;">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <h1 class="hero-title">Our Services</h1>
+        <p class="hero-sub">Explore our offerings, organized by category for easier browsing.</p>
+      </div>
+    </section>
+
+    <!-- SERVICES FILTER -->
+    <section class="section container services">
+      <div class="filter-buttons" style="margin-bottom:20px; display:flex; gap:12px;">
+        <button class="btn btn-primary" data-category="all">All</button>
+        <button class="btn btn-primary" data-category="programming">Programming</button>
+        <button class="btn btn-primary" data-category="printing">Printing</button>
+        <button class="btn btn-primary" data-category="stationery">Stationery</button>
+      </div>
+
+      <div id="services-list" class="services-grid">
+      </div>
+    </section>
+
+    <!-- BUDGET CHECK -->
+    <section class="section container budget-check">
+      <h2>Check Your Budget</h2>
+      <input type="number" id="budget" placeholder="Enter your budget" aria-label="Budget input">
+      <button class="btn btn-primary" id="save-budget">Save Budget</button>
+      <button class="btn btn-ghost" id="show-services">Show All Services</button>
+      <p id="budget-result"></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h4>Wisdom and Word (PTY) Ltd</h4>
+        <p class="muted small">40132 Venezuela Street, Eerste River, Cape Town 7100</p>
+        <p class="muted small">Phone: <a href="tel:+27611552911">+27 61 1552 911</a> • <a href="mailto:jmufetu@gmail.com">jmufetu@gmail.com</a></p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col social-col">
+        <h4>Connect</h4>
+        <div class="social-icons">
+          <a class="social" href="https://www.facebook.com" target="_blank" rel="noopener">
+            <img src="images/facebook.svg" alt="Facebook" class="icon">
+          </a>
+          <a class="social" href="https://wa.me/27611552911" target="_blank" rel="noopener">
+            <img src="images/whatsapp.svg" alt="WhatsApp" class="icon">
+          </a>
+          <a class="social" href="https://www.instagram.com" target="_blank" rel="noopener">
+            <img src="images/instagram.svg" alt="Instagram" class="icon">
+          </a>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Wisdom and Word (PTY) Ltd. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="scripts/project.js" defer></script>
+</body>
+</html>
+
